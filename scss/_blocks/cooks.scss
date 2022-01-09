@@ -1,0 +1,22 @@
+.cooks {
+    padding-bottom: 100px;
+    &__title {
+        margin-bottom: 107px;
+        text-align: center;
+    }
+    &__items {
+        padding-right: 19px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+    &__img-wrapper {
+        max-width: 540px;
+        max-height: 462px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,169 @@
+.header {
+    background-image: url(../../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    &__logo {
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &__top {
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__interaction {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item {
+        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 22px;
+        }
+    }
+    &__link {
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #fff;
+        text-transform: uppercase;
+        transition: all 0.5s;
+        position: relative;
+        padding-bottom: 10px;
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: "";
+            width: 0%;
+            height: 1px;
+            background: $orange;
+            transition: all 0.5s;
+        }
+        &:hover {
+            color: $orange;
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+    &__menu {
+        margin-right: 36px;
+    }
+    &__order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__btn {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    &__cart {
+        position: relative;
+        padding-right: 22px;
+        margin-right: 31px;
+        &::after {
+            top: 50%;
+            right: 0;
+            display: block;
+            transform: translateY(-50%);
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 51px;
+            background-color: #fff;
+        }
+    }
+    &__phone {
+        font-family: "Open Sans";
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        color: #fff;
+        position: relative;
+        padding-left: 31px;
+        margin-bottom: 1px;
+        &::before {
+            top: 50%;
+            left: 0;
+            display: block;
+            transform: translateY(-50%);
+            content: "";
+            position: absolute;
+            width: 23px;
+            height: 23px;
+            background-image: url(../../images/phone.svg);
+        }
+    }
+    &__phone-text {
+        font-family: "Open Sans";
+        font-size: 14px;
+        line-height: 19px;
+        color: #ffffff;
+        max-width: 154px;
+    }
+    &__phone-box {
+        margin-right: 45px;
+    }
+    &__content {
+        padding-top: 204px;
+        padding-bottom: 231px;
+        max-width: 485px;
+        text-align: center;
+    }
+    &__content-btn {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+    &__subtitle {
+        color: $title-orange;
+        font-family: "Tinos";
+        font-size: 50px;
+        line-height: 57px;
+        font-weight: 400;
+    }
+    &__title {
+        font-weight: 400;
+        color: $title-orange;
+        font-family: "Tinos";
+        font-size: 80px;
+        line-height: 92px;
+        margin-bottom: 12px;
+    }
+    &__tagline {
+        font-weight: 400;
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        position: relative;
+        margin-bottom: 21px;
+        padding-left: 70px;
+        padding-right: 70px;
+        &::after,
+        &::before {
+            top: 50%;
+            display: block;
+            transform: translateY(-50%);
+            content: '';
+            position: absolute;
+            width: 61px;
+            height: 2px;
+            background: #fff;
+        }
+        &::after {
+            right: 80px;
+        }
+        &::before {
+            left: 80px;
+        }
+    }
+}

@@ -1,0 +1,171 @@
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    color: $text;
+    font-family: "Tinos", sans-serif;
+    &::-webkit-scrollbar {
+        z-index: 10;
+        width: 12px;
+        height: 0;
+        background: rgba(#000, 0.8);
+        mix-blend-mode: normal;
+    }
+    &::-webkit-scrollbar-button {
+        display: none;
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background-color: rgba($orange, 0.7);
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: "Tinos", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000;
+    &--orange {
+        color: $title-orange;
+    }
+    &--white {
+        color: #fff;
+    }
+}
+
+.heading {
+    font-size: 26px;
+    line-height: 30px;
+    font-family: "Tinos", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #000;
+    &--brown {
+        color: $brown;
+    }
+    &--pale {
+        color: $pale-black
+    }
+    &--brown,
+    &--pale {
+        font-size: 26px;
+        line-height: 30px;
+        font-family: "Tinos", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+    }
+}
+
+.number {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 54px;
+    color: $brown
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 0;
+    background: $orange;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    border: 1px solid $orange;
+    color: #fff;
+    transition: all 0.5s;
+    box-sizing: border-box;
+    &:hover {
+        transform: scale(1.05);
+        color: $orange;
+        background: transparent;
+        border: 1px solid $orange;
+    }
+}
+
+.btn-menu {
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    padding: 13px 67px;
+    transition: all 0.5s;
+    background: $title-orange;
+    border: 1px solid $title-orange;
+    ;
+    &:hover {
+        transform: scale(1.05);
+        color: $title-orange;
+        ;
+        background: transparent;
+        border: 1px solid $title-orange;
+        ;
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        background: #C4C4C4;
+        width: 5px;
+        height: 5px;
+        border: none;
+        border-radius: 50%;
+        padding: 0;
+        font-size: 0;
+    }
+    li {
+        margin: 0 5px;
+    }
+    li.slick-active {
+        button {
+            width: 7px;
+            height: 7px;
+            background: transparent;
+            border: 1px solid #FF7400;
+        }
+    }
+}
+
+.background {
+    background-image: url(../images/picture.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 735px;
+}

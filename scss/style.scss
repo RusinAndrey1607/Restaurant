@@ -1,0 +1,15 @@
+@import "reset";
+@import "vars";
+@import "global";
+// CODE
+@import "_blocks/header.scss";
+@import "_blocks/features.scss";
+@import "_blocks/history.scss";
+@import "_blocks/blockquote.scss";
+@import "_blocks/dishes.scss";
+@import "_blocks/menu.scss";
+@import "_blocks/testimonials.scss";
+@import "_blocks/gallery.scss";
+@import "_blocks/cooks.scss";
+//
+@import "media";

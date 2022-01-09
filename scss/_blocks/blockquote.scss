@@ -1,0 +1,34 @@
+.blockquote {
+    background-image: url(../../images/blockquote-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 104px;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title {
+        max-width: 601px;
+        font-family: "Tinos";
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 60px;
+        color: $title-orange;
+        margin-bottom: 20px;
+    }
+    &__tagline {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        color: #FFFFFF;
+    }
+    &__btn {
+        padding-right: 18px;
+        padding-left: 18px;
+        margin-right: 40px;
+    }
+}
