@@ -25,6 +25,11 @@ body {
     }
 }
 
+.body.active {
+    overflow: hidden;
+    // padding-right: 12px;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -40,7 +45,7 @@ body {
 }
 
 .container {
-    max-width: 1160px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -57,6 +62,14 @@ body {
     }
     &--white {
         color: #fff;
+    }
+    @media(max-width: 450px) {
+        font-size: 40px;
+        line-height: 46px;
+        &--white {
+            font-size: 54px;
+            line-height: 60px;
+        }
     }
 }
 
@@ -160,12 +173,4 @@ body {
             border: 1px solid #FF7400;
         }
     }
-}
-
-.background {
-    background-image: url(../images/picture.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 735px;
 }

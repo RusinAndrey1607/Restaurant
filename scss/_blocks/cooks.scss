@@ -19,4 +19,19 @@
         height: 100%;
         object-fit: cover;
     }
+    @media(max-width: 630px) {
+        &__items {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 1fr;
+            grid-gap: 40px;
+        }
+    }
+    @media(max-width: 430px) {
+        &__title {
+            margin-bottom: 70px;
+        }
+        &__items {
+            grid-gap: 20px;
+        }
+    }
 }

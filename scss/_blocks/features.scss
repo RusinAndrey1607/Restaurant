@@ -9,6 +9,8 @@
     &__item {
         padding-top: 48px;
         padding-bottom: 25px;
+        padding-right: 5px;
+        padding-left: 5px;
         text-align: center;
         background: #FFFFFF;
         box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
@@ -34,5 +36,31 @@
         max-width: 87px;
         display: block;
         margin: 0 auto;
+    }
+    @media(max-width:930px) {
+        &__items {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            grid-gap: 30px;
+        }
+        &__item {
+            max-width: 450px;
+            width: 100%;
+        }
+    }
+    @media(max-width: 650px) {
+        &__items {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+        }
+    }
+    @media(max-width: 450px) {
+        &__text {
+            font-size: 22px;
+            line-height: 25px;
+        }
+        &__items {
+            margin-bottom: 75px;
+        }
     }
 }

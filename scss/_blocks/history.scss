@@ -1,4 +1,5 @@
 .history {
+    margin-bottom: 122px;
     &__inner {
         display: flex;
         align-items: center;
@@ -41,5 +42,37 @@
         line-height: 27px;
         text-align: center;
         color: #000;
+    }
+    @media(max-width: 1040px) {
+        &__content {
+            margin-right: 70px;
+        }
+    }
+    @media(max-width: 910px) {
+        &__content {
+            margin-right: 40px;
+        }
+    }
+    @media(max-width: 750px) {
+        &__inner {
+            flex-direction: column;
+        }
+        &__content {
+            margin-right: 0px;
+            margin-bottom: 45px;
+        }
+    }
+    @media(max-width: 420px) {
+        &__numbers {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__number {
+            &:not(:last-child) {
+                margin-right: 0px;
+                margin-bottom: 23px;
+            }
+        }
     }
 }
