@@ -13,15 +13,15 @@ const two = document.querySelector('.number--two')
 const three = document.querySelector('.number--three')
 
 
-// const intervalId = setInterval(() => {
-//     one__number < 93 && one__number++;
-//     two__number < 206 && two__number++;
-//     three__number < 71 && three__number++;
-//     one.innerHTML = one__number
-//     two.innerHTML = two__number
-//     three.innerHTML = three__number
-//     two__number == 206 && clearInterval(intervalId)
-// }, 100)
+const intervalId = setInterval(() => {
+    one__number < 93 && one__number++;
+    two__number < 206 && two__number++;
+    three__number < 71 && three__number++;
+    one.innerHTML = one__number
+    two.innerHTML = two__number
+    three.innerHTML = three__number
+    two__number == 206 && clearInterval(intervalId)
+}, 100)
 
 const burger = document.querySelector(".header__burger");
 const menu = document.querySelector(".header__menu");

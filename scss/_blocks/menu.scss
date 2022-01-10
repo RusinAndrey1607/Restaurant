@@ -99,8 +99,11 @@
             justify-items: center;
         }
         &__item {
-            max-width: 450px;
+            max-width: 380px;
             width: 100%;
+            &:nth-child(3) {
+                align-items: center;
+            }
         }
     }
     @media(max-width: 700px) {
@@ -112,7 +115,7 @@
             margin-bottom: 95px;
         }
         &__item {
-            max-width: 100%;
+            max-width: 400px;
             width: 100%;
             &:hover {
                 transform: none;
@@ -122,6 +125,14 @@
     }
     @media(max-width: 400px) {
         padding-bottom: 106px;
+        &__item {
+            max-width: 100%;
+            width: 100%;
+            &:hover {
+                transform: none;
+                box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.15);
+            }
+        }
         &__item-price {
             right: 30px;
         }

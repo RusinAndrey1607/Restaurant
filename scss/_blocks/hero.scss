@@ -1,0 +1,99 @@
+.hero {
+    background-image: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    &__content {
+        padding-top: 322px;
+        padding-bottom: 231px;
+        max-width: 485px;
+        text-align: center;
+    }
+    &__content-btn {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+    &__subtitle {
+        color: $title-orange;
+        font-family: "Tinos";
+        font-size: 50px;
+        line-height: 57px;
+        font-weight: 400;
+    }
+    &__title {
+        font-weight: 400;
+        color: $title-orange;
+        font-family: "Tinos";
+        font-size: 80px;
+        line-height: 92px;
+        margin-bottom: 12px;
+    }
+    &__tagline {
+        font-weight: 400;
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        position: relative;
+        margin-bottom: 21px;
+        padding-left: 70px;
+        padding-right: 70px;
+        &::after,
+        &::before {
+            top: 50%;
+            display: block;
+            transform: translateY(-50%);
+            content: "";
+            position: absolute;
+            width: 61px;
+            height: 2px;
+            background: #fff;
+        }
+        &::after {
+            right: 80px;
+        }
+        &::before {
+            left: 80px;
+        }
+    }
+}
+
+@media (max-width: 930px) {
+    .hero {
+        &__content {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .hero {
+        &__subtitle {
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 34px;
+        }
+        &__title {
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 46px;
+            margin-bottom: 6px;
+        }
+        &__tagline {
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .hero {
+        &__tagline {
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+}

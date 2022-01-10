@@ -7,10 +7,11 @@
         margin-bottom: 150px;
     }
     &__item {
+        max-width: 349px;
         padding-top: 48px;
         padding-bottom: 25px;
-        padding-right: 5px;
-        padding-left: 5px;
+        padding-right: 15px;
+        padding-left: 15px;
         text-align: center;
         background: #FFFFFF;
         box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
